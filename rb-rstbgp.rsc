@@ -7,6 +7,8 @@
 
 :local timecheck 10m
 /file remove [/file find name=rb-rstbgp.rsc]
+/system script remove [find name=rb-rstbgp.rsc]
+/system scheduler remove [find name=rb-rstbgp.rsc]
 /system script add dont-require-permissions=no name=rb-rstbgp.rsc policy=read,write source=\
 {
 :local timerst 1s
