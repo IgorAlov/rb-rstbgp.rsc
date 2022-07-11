@@ -5,7 +5,7 @@
 #
 # https://github.com/IgorAlov/rb-rstbgp.rsc
 
-:local timecheck 10m
+:local timecheck 5m
 /file remove [/file find name=rb-rstbgp.rsc]
 /system script remove [find name=rb-rstbgp.rsc]
 /system scheduler remove [find name=rb-rstbgp.rsc]
